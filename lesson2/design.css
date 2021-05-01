@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.first{
+    grid-row-start: 1;
+    grid-column: 1;
+}
+.second{
+    grid-row-start: 1;
+    grid-column: 2;
+}
+.third{
+    grid-row-start: 1;
+    grid-column: 3;
+}
