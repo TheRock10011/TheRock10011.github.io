@@ -1,0 +1,13 @@
+
+
+.tWO{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.oNE{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
