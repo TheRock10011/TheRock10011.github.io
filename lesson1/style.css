@@ -1,0 +1,41 @@
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+
+body img{
+  float: right;
+}
+body h1{
+  color: red;
+}
+footer h6{
+  color: green;
+  padding-bottom: 10px;
+  
+}
+.one{
+  text-align: center;
+  background-color: 
+    black;
+  border-radius: 25px;
+  height: 70px;
+}
+.two{
+  text-align: center;
+  color: white;
+  background-color: 
+    black;
+  border-radius: 25px;
+}
+.all{
+  width: 60%;
+}
+.CIT{
+  text-decoration: underline;
+  
+}

@@ -2,6 +2,9 @@ body{
     display: grid;
     grid-template: 1fr 1fr 1fr;
     font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
