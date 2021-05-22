@@ -1,0 +1,101 @@
+.carousel {
+	position: relative;
+	height: 90%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.carousel__slide-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media only screen and (max-width: 800px) {
+	body{
+		
+background-color: blue;
+	}
+	img{
+		position:relative;
+    left:-10%;
+		
+	}
+	.carousel__slide{
+		width:450px;
+		height:600px;
+		overflow:hidden;
+	}
+	.carousel__button_left{
+		position: absolute;
+	top: 8px;
+	left: 60px;
+	}
+	.carousel__button_right{
+		position: absolute;
+	top: 8px;
+	right: 16px;
+	}
+
+
+}
+
+.carousel__slide-info{
+	position: absolute;
+	top: 170px;
+
+}
+.carousel__nav{
+	position:relative;
+	padding-left: 300px;
+	padding-bottom: 100px;
+	margin-bottom: 40px;
+	border-radius: 50%;
+	border-width: 150%;
+	border-color: black;
+	color: black;
+}
+.carousel__nav button{
+	position:relative;
+	border-radius: 50%;
+	border-width: 150%;
+	border-color: black;
+	color: black;
+	background-color: black;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-right: 20px;
+	position: relative;
+	bottom: 70px;
+
+}
+.carousel__button_left{
+	background-color: none;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	position: absolute;
+	top: 120px;
+	left: 60px;
+	
+}
+.carousel__button_right{
+	background-color: none;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	position: absolute;
+	top: 120px;
+	right: 16px;
+}

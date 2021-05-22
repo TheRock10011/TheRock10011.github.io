@@ -1,0 +1,167 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #251a9c;
+    --secondary-color: #00b315;
+    --accent1-color: #891ac9;
+    --accent2-color: #00b315;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #251a9c; /* headlines on a white background */
+    --headline-color-on-color: #891ac9; /* headlines on a colored background */
+    --paragraph-color-on-white: #00b315; /* paragraph text on a white background */
+    --paragraph-color-on-color: #251a9c; /* paragraph text on a colored background */
+    --paragraph-background-color: #00b315;
+    --nav-link-color: #251a9c;
+    --nav-background-color: #00b315;
+    --nav-hover-link-color: #00b315;
+    --nav-hover-background-color: #251a9c;
+  }
+
+
+
+
+.contentbox{
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+}
+div{
+    display: block;
+}
+body{
+    font-size: 16px;
+    font-family: "Merriweather Sans", consolas, sans-serif;
+}
+html{
+    color: internal root color;
+}
+
+nav {
+
+    background-color: #891ac9;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .nav-end {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    font-size: 1em;
+    padding: 1em;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .nav-item:hover {
+    background-color: #251a9c;
+  }
+  
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+
+
+
+  .responsive div {
+    display: block !important;
+    background-color: #00b315;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .contentbox{
+      padding: none;
+      margin: none;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 760px) {
+    nav {
+        margin: 0 auto;
+    
+    }
+    .navbar {
+      padding: 0;
+      display: block;
+    }
+    nav .menu {
+      display: block;
+    }
+    .navbar .nav-item {
+      font-size: 0.75em;
+      padding: 0.5em;
+      display: none;
+    }
+  
+    .navbar a {
+      display: block;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    .navbar div {
+      display: block;
+    }
+  }
+
+  header h2{
+     background-color: aqua; 
+     text-align: center;
+     font-family: 'Source Code Pro', monospace;
+  }
+  header h4{
+    background-color: aqua; 
+    text-align: center;
+ }
+ footer h4{
+    text-align: center;
+    background-color: #00b315;
+ }
+ 
+ main h2{
+    text-align: center;
+ }
+ footer{
+    padding-left: 12%;
+    padding-right: 12%;
+ }
+ main{
+    padding-left: 12%;
+    padding-right: 12%;
+ }
+ header{
+    padding-left: 12%;
+    padding-right: 12%;
+ }
+ header img{
+  width: 300px;
+  grid-row: 1;
+  grid-column: 0;
+ }
+
