@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#thing1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+ #thing2  {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+
+@keyframes example2 {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+#thing3{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example3;
+  animation-duration: 4s;
+}
+
+@keyframes example3 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+#thing4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes example4 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+#thing5{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example5;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example5 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+#thing6 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example6;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes example6 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+#thing7{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example7;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example7 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+#thing8{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example8;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example8 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+#thing9{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example9;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+@keyframes example9 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+#thing10 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example10;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes example10 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.onetime div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+  margin-bottom: 0px;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+
+#thing11 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example11;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes example11 {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+
+#thing12 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example12;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes example12 {
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px;}
+}
+
+
+
+#thing13{
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example13;
+  animation-duration: 3s;  
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes example13{
+  from {top: 0px; background-color: yellow;}
+  to {top: 200px; background-color: blue;}
+}
+
+
+#thing14{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example14;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example14 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+#thing15 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+div {
+   margin-bottom: 200px;
+}
+</style>
+</head>
+<body>
+<p>In this chapter you will learn about the following properties:<br>
+
+   <b>>@keyframes</b><br>
+   <b>animation-name</b><br>
+   <b>animation-duration</b><br>
+   <b>animation-delay</b><br>
+   <b>animation-iteration-count</b><br>
+   <b>animation-direction</b><br>
+   <b>animation-timing-function</b><br>
+<b>animation-fill-mode</b><br>
+<b>animation</b><br></p>
+<p><b>The @keyframes Rule</b><br>
+   The following example binds the "example" animation to the <div> element. The animation will last for 4 seconds, and it will gradually change the background-color of the <div> element from "red" to "yellow":</p>
+
+<div id="thing1"></div>
+
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+<p>The following example will change the background-color of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+<div  id="thing2"></div>
+<br>
+<br>
+<p>The following example will change both the background-color and the position of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+<div id="thing3"></div>
+
+<br>
+<br>
+<p>The following example has a 2 seconds delay before starting the animation:</p>
+<div id="thing4"></div>
+
+
+
+<br>
+<br>
+<p>In the following example, the animation will start as if it had already been playing for 2 seconds:</p>
+<div id="thing5"></div>
+
+<br>
+<br>
+<p><b>Set How Many Times an Animation Should Run</b><br>
+   The following example will run the animation 3 times before it stops:</p>
+<div id="thing6"></div>
+
+
+<br>
+<br>
+<p>The following example uses the value "infinite" to make the animation continue for ever:</p>
+<div id="thing7"></div>
+
+
+<br>
+<br>
+<p><b>Run Animation in Reverse Direction or Alternate Cycles</b><br>
+   The following example will run the animation in reverse direction (backwards):</p>
+<div id="thing8"></div>
+
+
+<br>
+<br>
+<p>The following example uses the value "alternate" to make the animation run forwards first, then backwards:</p>
+<div id="thing9"></div>
+
+
+<br>
+<br>
+<p>The following example uses the value "alternate-reverse" to make the animation run backwards first, then forwards:</p>
+<div id="thing10"></div>
+
+<p><b>Specify the Speed Curve of the Animation </b><br>
+   The following example shows some of the different speed curves that can be used:</p>
+<section class="onetime">
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+</section>
+
+<br>
+<br>
+<p><b>Specify the fill-mode For an Animation</b><br>
+   The following example lets the <div> element retain the style values from the last keyframe when the animation ends:</p>
+<div id="thing11"></div>
+
+<br>
+<br>
+<p>The following example lets the <div> element get the style values set by the first keyframe before the animation starts (during the animation-delay period):</p>
+<div id="thing12"></div>
+
+<br>
+<br>
+<p>The following example lets the <div> element get the style values set by the first keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends:</p>
+<div id="thing13"></div>
+
+<br>
+<br>
+<p>The example below uses six of the animation properties:</p>
+<div id="thing14"></div>
+
+<br>
+<br>
+<p>The same animation effect as above can be achieved by using the shorthand animation property:.</p>
+<div id="thing15"></div>
+
+</body>
+</html>
