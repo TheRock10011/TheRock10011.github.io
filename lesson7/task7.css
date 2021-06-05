@@ -1,0 +1,65 @@
+.item1 { 
+  grid-area: item01; 
+  background-color: #35424c;
+}
+.item2 { 
+  grid-area: item02; 
+  background-color: #0097a7;
+}
+.item3 { 
+  grid-area: item03; 
+  background-color: #dc5757;
+  
+}
+.item4 { 
+  grid-area: item04; 
+  background-color: #e7496c;
+  
+}
+.item5 { 
+  grid-area: item05; 
+  background-color: #435d74;
+  
+}
+.item6 { 
+  grid-area: item06; 
+  background-color: #e69138;
+}
+.item7 { 
+  grid-area: item07; 
+  background-color: #674ea7;
+}
+.item8 { 
+  grid-area: item08; 
+  background-color: #bfd069;
+}
+.item9 { 
+  grid-area: item09; 
+  background-color: #bfd069;
+}
+.item10 { 
+  grid-area: item10; 
+  background-color: #dd7e6b;  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'item01 item01 item01 item01 item01 item01 item01 item01'
+    'item02 item02 item02 item02 item03 item03 item03 item03'
+    'item04 item04 item05 item05 item05 item06 item06 item06'
+    'item04 item04 item10 item10 none   item06 item06 item06'
+    'item04 item04 item07 item07 item07 item07 item08 item09';
+  grid-gap: 10px;
+  padding: 0px;
+
+}
+
+.grid-container > div {
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 30px;
+ box-shadow: 1px 1px 3px #3D3737;
+  border-radius: .05em;
+}
