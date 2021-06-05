@@ -23,6 +23,7 @@ body{
     max-width: 960px;
    
   }
+  .norm:hover {box-shadow: none;}
 }
 
 
@@ -35,5 +36,5 @@ body{
     max-width: 600px;
    
   }
- 
+  .norm:hover {box-shadow: none;}
 }
