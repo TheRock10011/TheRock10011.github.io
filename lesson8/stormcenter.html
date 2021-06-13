@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title></title>
+
+    <!-- import the webpage's stylesheet -->
+
+    <!-- import the webpage's javascript file -->
+    <link rel="stylesheet" href="stormcenter.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <script src ="stormcenter.js"></script>
+  </head>  
+  <body cz-shortcut-listen="true">
+    <header>
+     
+      <h3 class = "FridayDeal">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h3>
+      <h4>Currently: Rainy <br>
+      High: 54 F<br>
+      Wind Chill: <div id="chill">51</div> F<br>
+      Humidity: 95%
+      Wind Speed: 12 mph</h4>
+      <img src="wdd230_image_franklinOriginal.jpeg">
+      <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VhdGhlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80">
+      <h2>the-new-weather-company.com<br>
+ 
+    </h2>
+    <h4>May todays weather be ever better</h4>
+    <script scr="js/windchill.js"></script>
+  </header>
+
+  <ul>
+    <nav>
+      <div class="menu nav-item">
+         <div class="nav-end">
+            <a>Menu</a>
+         </div>
+      </div>
+      <div class="navbar">
+         <div class="nav-item">
+            <a href="#">Home</a>
+         </div>
+         <div class="nav-item">
+            <a href="#">Preston</a>
+         </div>
+         <div class="nav-item">
+            <a href="#">Soda Springs</a>
+         </div>
+         <div class="nav-item">
+            <a href="#">Fish Haven</a>
+         </div>
+            <div class="nav-item">
+               <a href="#">Storm Center</a>
+            </div>
+            <div class="nav-item">
+               <a href="#">Gallery</a>
+            </div>
+      </div>
+   </nav>
+
+  </ul>
+
+
+    <script src="js/toggle_06.js"></script>
+
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="contentbox">Hero w/ weather summary</div>
+      <div class="contentbox forecast">Five Day Forecast</div>
+      <div class="contentbox">Article</div>
+      <div class="contentbox">Contact Information</div>
+    </main>
+    <footer><h4>@The Weather Site | Attributions | Brandon Choules</h4>
+    <h4 id = "Date"></h4></footer>
+  
+    <script type="text/javascript"></script>
+    <script src="js/DateTime.js"></script>
+    <script src="js/Pancake.js"></script>
+    <script scr="js/windchill.js"></script>
+  </body>
+
+
+
+  <form method="post" action="#" class="grid">
+    <fieldset>
+      <label>Enter one letter:
+        <input type="text" size="1" name="input1" required pattern="[A-Za-z]">
+      </label>
+    </fieldset>
+  
+    <fieldset>
+      <!-- this demonstrates the two ways to use labels (for) and (surround) - demonstrate what happens -->
+      <fieldset class="nestedfieldset">
+        <legend>Radio Buttons <em>(Choose one)</em></legend>
+        <div class="selection">
+          <input type="radio" id="time1" name="time" value="8" checked> <label for="time1">8:00 a.m.</label>
+        </div>
+        <div class="selection">
+          <label><input type="radio" name="time" value="9"> 9:00 a.m.</label>
+        </div>
+        <div class="selection">
+          <input type="radio" id="time3" name="time" value="10">
+          <label for="time3">10:00 a.m.</label>
+        </div>
+        <div class="selection">
+          <input type="radio" id="time4" name="time" value="11">
+          <label for="time4">11:00 a.m.</label>
+        </div>
+      </fieldset>
+      <fieldset class="nestedfieldset">
+        <legend>Checkbox <em>(Select all that apply)</em></legend>
+        <div class="selection">
+          <label for="coding"><input type="checkbox" id="coding" name="interest" value="coding" checked> Coding</label>
+        </div>
+        <div class="selection">
+          <label for="music"><input type="checkbox" id="music" name="interest" value="music"> Music</label>
+        </div>
+        <div class="selection">
+          <label for="football"><input type="checkbox" id="football" name="interest" value="football"> Football</label>
+        </div>
+        <div class="selection">
+          <label for="gardening"><input type="checkbox" id="gardening" name="interest" value="gardening"> Gardening</label>
+        </div>
+      </fieldset>
+    </fieldset>
+  
+    <fieldset>
+      <label for="zip">Zip Code:
+        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label><br>
+      <!-- use the label example here -->
+      <label>Phone:
+        <input type="tel" name="phone" placeholder="###-###-####">
+      </label><br>
+      <label>eMail:
+        <input type="email" name="email" placeholder="user@email.org"></label><br>
+      <label for="u">URL:
+        <input type="url" name="u" id="u" value="http://www.ibm.com"></label><br>
+    </fieldset>
+  
+    <fieldset>
+      <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span>
+      </label>
+  
+      <datalist id="tickmarks">
+        <option value="0">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+        <option value="9">
+        <option value="10">
+      </datalist>
+  
+      <label>Browser:
+        <input name="browsers" list="browserlist"></label>
+      <datalist id="browserlist">
+        <option value="Google Chrome">
+        <option value="Mozilla Firefox">
+        <option value="Microsoft Edge">
+      </datalist>
+      <br><br>
+      <label>
+        <select name="browsers" id="selectbrowser" onchange="selectResponse()">
+          <option value="" disabled selected>Select a Browser ...</option>
+          <option value="Chrome">Google Chrome</option>
+          <option value="Firefox">Mozila Firefox</option>
+          <option value="MS Edge">MS Edge</option>
+          <option value="Brave">Brave</option>
+        </select></label>
+    </fieldset>
+  
+    <fieldset>
+      <label for="search">Search: </label><input type="search" id="search"><br>
+      <label for="month">Month: </label> <input type="month" id="month"><br>
+      <label for="week">Week: </label> <input type="week" id="week">
+    </fieldset>
+  
+    <fieldset>
+      <label>Date Picker:
+        <input type="date" name="theDate"></label><br>
+      <label>Choose a color:
+        <input type="color" name="color"></label>
+      <hr>
+      <div class="buttons bottom">
+  
+          <input type="submit" class="sbutton"><br>
+          <input type="button" value="Button Value" class="sbutton"><br>
+          <button type="button" class="sbutton">Button Text</button>
+      </div>
+    </fieldset>
+  </form>
+  
+  <div id="selected"></div>
+  
+
+</html>
